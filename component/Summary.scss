@@ -1,0 +1,97 @@
+.bottom-container {
+ position: sticky;
+ bottom: 0px;
+//  width: 80%;
+ margin: 35px auto;
+
+ .my-header {
+  background-color: #b8ebff;
+  padding: 20px 0px 10px 0;
+  height: 36px;
+  border-radius: 10px 10px 0px 0px;
+
+  @media (max-width: 400px) {}
+
+  .header-left {
+   .expand-button-one {
+    position: absolute;
+    cursor: pointer;
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    top: 34px;
+    left: 38px;
+    transform: rotate(180deg);
+   }
+
+   p {
+    position: absolute;
+    top: 14px;
+    left: 90px;
+   }
+
+   @media (max-width: 486px) {
+    p {
+     display: none;
+    }
+   }
+  }
+
+  .header-right {
+   flex-basis: 0;
+   position: absolute;
+   right: 20px;
+   display: flex;
+   align-items: center;
+   top: 14px;
+   gap: 15px;
+
+   @media (max-width: 768px) {
+    p {
+     display: none;
+    }
+   }
+
+   .selection {
+    position: relative;
+    left: -32px;
+   }
+
+   @media (max-width: 1068px) {
+    .selection {
+     display: none;
+    }
+   }
+
+   .count1 {
+    font-size: 12;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -6px;
+   }
+
+   .hr-solutions {
+    background-color: #004f9e;
+    margin-right: 25px;
+    position: relative;
+   }
+
+   .hr-services {
+    background-color: #e65a25;
+    margin-right: 25px;
+    position: relative;
+   }
+
+   .sap-solutions {
+    background-color: #58595b;
+    margin-right: 25px;
+    position: relative;
+   }
+  }
+ }
+}

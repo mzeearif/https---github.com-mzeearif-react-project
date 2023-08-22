@@ -1,0 +1,14 @@
+.product__checkbox {
+ display: flex;
+ flex-direction: row;
+ position: absolute;
+ right: 11px;
+ top: 12px;
+ transform: scale(1.5);
+
+ input {
+  content: icon;
+  justify-content: first baseline;
+  accent-color: var(--primaryCategoryColor);
+ }
+}

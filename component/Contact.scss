@@ -1,0 +1,120 @@
+.contact-form-container {
+ position: relative;
+ margin: -38px auto;
+ margin-bottom: 20px;
+ padding-bottom: 30px;
+ background-color: #f3fbff;
+ //display: block;
+ box-shadow: 0px 8px 70px rgba(0, 0, 0, 0.12), 0px 2px 8px rgba(0, 0, 0, 0.08);
+
+ .content-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding-bottom: 30px;
+
+  @media (max-width: 1020px) {
+   grid-template-columns: 1fr;
+  }
+
+  .content-left {
+   position: relative;
+   padding: 10px;
+
+   span {
+    color: #18b2e8;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+
+    @media screen and (max-width: 1024px) {
+     font-size: 32px;
+    }
+   }
+
+   .h3-class {
+    position: relative;
+    padding: 30px;
+    color: #52585c;
+    display: inline-flex;
+    align-items: baseline;
+   }
+
+   .scrollable-input {
+    position: relative;
+    left: 64px;
+    display: block;
+    width: 80%;
+    height: 452px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow-y: auto;
+    background-color: #f8fdff;
+
+    @media (max-width: 821px) {
+     width: 70%;
+     height: 300px;
+    }
+
+    @media screen and (max-width: 550px) {
+     left: 20px;
+    }
+
+    .category-class {
+     color: var(--primaryCategoryColor);
+
+     &:nth-child(n + 2) {
+      margin-top: 25px;
+     }
+
+     &:hover {
+      background: var(--hoverColor);
+     }
+    }
+
+    .group-class {
+     color: var(--primaryCategoryColor);
+     margin-top: 15px;
+    }
+
+    .prduct-class {
+     color: var(--primaryCategoryColor);
+    }
+   }
+  }
+
+  .content-right {
+   position: relative;
+   padding: 10px;
+   right: 40px;
+
+   @media (max-width: 1020px) {
+    right: unset;
+   }
+
+   .number {
+    color: #18b2e8;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+
+    @media screen and (max-width: 1024px) {
+     font-size: 32px;
+    }
+   }
+
+   .h3-class {
+    position: relative;
+    padding: 30px;
+    color: #52585c;
+    display: inline-flex;
+    align-items: baseline;
+   }
+  }
+ }
+}

@@ -1,0 +1,41 @@
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #fff;
+  color: #52585c;
+    transition: color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+    filter: drop-shadow(0px 1px 3px rgba(96,105,108,0.15));
+  z-index: 2;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-items {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-items li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* Optional: Add styles for active and hover states if needed */
+.navbar-items li:hover {
+  color: #004f9e !important;
+}
+
+.navbar-items li.active {
+  color: #f00;
+}

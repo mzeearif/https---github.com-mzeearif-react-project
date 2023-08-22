@@ -1,0 +1,16 @@
+.product_expand_icon {
+  position: absolute;
+  top: 11px;
+  right: 0;
+  cursor: pointer;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-family: "proxima-nova",
+    Arial,
+    sans-serif !important;
+
+  img {
+    color: var(--primaryCategoryColor);
+  }
+}
